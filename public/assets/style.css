@@ -1,0 +1,133 @@
+* {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.timer {
+    /* width: 50%; */
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+.number-container {
+    width: 25%;
+    margin: 20px 30px;
+    position: relative;
+}
+.number {
+    border: 1px gray dashed;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.number-header h5 {
+    text-align: center;
+}
+.numberSpan {
+    display: block;
+    margin-top: 8px;
+}
+
+.timer > .number-container:not(:last-child)::after {
+    display: inline;
+    content: ":";
+    font-size: 28px;
+    position: absolute;
+    left: 120%;
+    top: 56%;
+}
+
+#input-time {
+    margin: 0 auto;
+    margin-top: 25px;
+}
+#form {
+    display: flex;
+    justify-content: space-evenly;
+}
+.input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 120px;
+}
+.input:focus {
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.submit {
+    width: 30px;
+    background-color: rgb(245, 63, 18);
+    border-radius: 3px;
+    color: black;
+    text-align: center;
+    border: none;
+    width: 100px;
+    transition: 0.2s;
+    color: white;
+}
+.submit:hover {
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#start-reset {
+    margin: 20px auto;
+}
+#start {
+    width: 100px;
+    border: none;
+    background-color: rgba(112, 212, 112, 0.705);
+    border-radius: 3px;
+    font-size: 17px;
+    margin: 0 auto;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+#reset {
+    width: 100px;
+    border: none;
+    background-color: red;
+    border-radius: 3px;
+    font-size: 17px;
+    margin: 0 auto;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+
+#start:hover,
+#reset:hover {
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.button-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#alert-container {
+    width: 50%;
+    margin: 0 auto;
+}
+.alert {
+    text-align: center;
+    background-color: rgb(255, 64, 64);
+    color: white;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 5px 0px;
+}

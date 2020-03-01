@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="assets/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+        <title>count Down clock</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="alert-container"></div>
+            <div class="timer">
+                <div class="number-container">
+                    <div class="number-header"><h5>Day</h5></div>
+                    <div class="number"><span class="numberSpan" id="day">0</span></div>
+                </div>
+                <div class="number-container">
+                    <div class="number-header"><h5>Hour</h5></div>
+                    <div class="number"><span class="numberSpan" id="hour">0</span></div>
+                </div>
+                <div class="number-container">
+                    <div class="number-header"><h5>Min</h5></div>
+                    <div class="number"><span class="numberSpan" id="min">0</span></div>
+                </div>
+                <div class="number-container">
+                    <div class="number-header"><h5>Sec</h5></div>
+                    <div class="number"><span class="numberSpan" id="sec">0</span></div>
+                </div>
+            </div>
+
+            <div id="input-time">
+                <form id="form" action="">
+                    <input class="input" type="text" name="" placeholder="Day" id="day-input" />
+                    <input class="input" type="text" name="" placeholder="Hour" id="hour-input" />
+                    <input class="input" type="text" name="" placeholder="Minute" id="min-input" />
+                    <input class="input" type="text" name="" placeholder="Second" id="sec-input" />
+                    <input class="submit" type="submit" value="submit" />
+                </form>
+            </div>
+            <div id="start-reset">
+                <div class="button-container">
+                    <button id="start">Start</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="../src/app.js"></script>
+    </body>
+</html>
